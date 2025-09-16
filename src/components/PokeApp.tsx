@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import PokemonCard from "./PokemonCard";
+import Team from "./Team";
+
 
 // Skapa en interface för att beskriva vårt pokemon-objekt. Som ett kontrakt som säger vi vill ha: namn och bild inget mer, inget mindre
 interface Pokemon {
@@ -10,6 +13,7 @@ const PokeApp = () => {
   // State som håller och set:ar vår pokemon
   // Init-värde ar null (ingen pokemon än). TS-generics
   const [firstPokemon, setFirstPokemon] = useState<Pokemon | null>(null);
+
 
   // Vill komma åt sidoeffekt (component lifecycle svar i funktionella-komponenter)
   useEffect(() => {

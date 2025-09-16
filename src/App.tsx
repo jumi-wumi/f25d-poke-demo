@@ -1,11 +1,11 @@
 import './App.css'
-import PokeApp from './components/PokeApp.tsx'
+import PokeDashboard from './components/PokeDashboard'
 
 function App() {
 
   return (
     <>
-     <PokeApp />
+    <PokeDashboard />
     </>
   )
 }
